@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    form {
+      width: 800px;
+      margin: 100px auto; 
+    }
+
+    form > input,
+    form > select {
+      display: flex;
+      width: 300px;
+      padding: 10px;
+      margin-bottom: 15px;
+      outline: none;
+      border: 1px solid #9e9e9e;
+      border-radius: 6px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    form > select {
+      width: 322px;
+    }
+
+    input[type="submit"] {
+      border: none;
+      background-color: #009688;
+      color: white;
+      width: 322px;
+    }
+
+    .results {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap: 10px;
+    }
+
+    .results > div,
+    .results > section {
+      width: 200px;
+      background-color: #ff5722;
+      margin: 0 auto;
+      text-align: center;
+      padding: 10px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <form action="#">
+    <input type="number" name="elements" class="input" placeholder="Number Of Elements" />
+    <input type="text" name="texts" class="input" placeholder="Elements Text" />
+    <select name="type" class="input">
+      <option value="Div">Div</option>
+      <option value="Section">Section</option>
+    </select>
+    <input type="submit" name="create" value="Create" />
+    <div class="results"></div>
+  </form>
+  <script src="main.js"></script>
+</body>
+</html>
